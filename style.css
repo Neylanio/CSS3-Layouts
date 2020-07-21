@@ -1,0 +1,65 @@
+body, 
+ul, 
+li, 
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+h1{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.header {
+  background: #1d1e20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+ display: block; 
+ padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.flex {
+  display: flex;
+  /* Pode quebrar de linha */
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex > div {
+  /* Vai poder se expandir, shrink como true(vai poder expremer) e tamanho base de 200px */
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+
+
