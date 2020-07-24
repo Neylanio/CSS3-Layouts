@@ -1,4 +1,4 @@
-# Grid 2
+# Grid 3
 > Layouts using Grid layout 
 
 <div>
