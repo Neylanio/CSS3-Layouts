@@ -21,7 +21,7 @@ a {
 
 h1{
   text-align: center;
-  margin-top: 50px;
+  margin: 25px;
 }
 
 .header {
@@ -51,40 +51,49 @@ img {
   display: block;
 }
 
-.grid1 {
+.grid2 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 800px;
+  grid-template-columns: 1fr 250px;
+  grid-gap: 60px;
+  max-width: 1200px;
   padding: 10px;
   margin: 0 auto;
-  grid-gap: 20px;
 }
 
-.grid1 > div:nth-child(n + 4) {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  align-items: center;
+.grid2 .sidebar > div{
+  margin-bottom: 10px;
 }
 
-.grid1 > div.propaganda {
-  grid-column: 1;
-  grid-row: 2 / 5;
-  display: block;
+.grid2 .sidebar > div img {
+  width: 100%;
 }
 
-@media (max-width: 600px) {
-  .grid1 {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 700px) {
+  .grid2 {
+    grid-template-columns: 1fr;
   }
 
-  .grid1 > div:nth-child(n + 4) {
+  .grid2 .video{
+    margin-bottom: 50px;
+  }
+
+  .grid2 .sidebar {
+    display: flex;
+    overflow: scroll;
+  }
+
+  .grid2 .sidebar > div {
+    flex: 1 0 200px;
+    margin: 0 10px;
+  }
+
+  /* .grid1 > div:nth-child(n + 4) {
     display: block;
   }
 
   .grid1 > div.propaganda {
     grid-column: auto;
     grid-row: auto;
-  }
+  } */
 }
 
