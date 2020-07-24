@@ -2,5 +2,5 @@
 Layouts using FlexBox
 
 <div>
-  <img href="tela.png" alt="Design da tela"/>
+  <img src="./tela.png" alt="Design da tela"/>
 </div>
